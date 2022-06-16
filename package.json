@@ -1,13 +1,12 @@
 {
-  "name": "fh-my-storybook-components",
+  "name": "tc-storybook-components",
   "version": "0.1.0",
   "private": false,
   "license": "MIT",
-  "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "homepage": "https://fernando-herrera.com",
+  "main": "dist/index.js",
   "repository": {
-    "url": "https://github.com/Klerith/sb-components",
+    "url": "https://github.com/Tryal1/Storybook",
     "type": "git"
   },
   "peerDependencies": {
@@ -38,7 +37,7 @@
   },
   "scripts": {
     "start": "start-storybook -p 6006",
-    "build": "build-storybook",
+    "build": "yarn clean && tsc && yarn copy-files",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "chromatic": "npx chromatic --project-token=b53333a09638",
